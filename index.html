@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alphascid Technologies</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h4 class="brand">Alphascid</h4>
+
+      <nav>
+        <ul class="nav-item">
+          <li class="nav-link"><a href="">about</a></li>
+          <li class="nav-link"><a href="">services</a></li>
+          <li class="nav-link"><a href="">technologies</a></li>
+          <li class="nav-link"><a href="">the team</a></li>
+        </ul>
+      </nav>
+
+      <a href=""
+        ><button class="contact-button" type="button">Contact Us</button></a
+      >
+
+      <a href="javascript:void(0);" class="hand-burger" onclick="handBurger()">
+        <i class="fa fa-bars"></i>
+      </a>
+      
+    </header>
+    
+      <nav>
+        <ul class="nav-item-mini " id="nav-item-mini">
+          <li class="nav-link mini"><a href="">about</a></li>
+          <li class="nav-link mini"><a href="">services</a></li>
+          <li class="nav-link mini"><a href="">technologies</a></li>
+          <li class="nav-link mini"><a href="">the team</a></li>
+          <li class="nav-link mini"><a href="">contact us</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="overview">
+            <div class="left">
+                <h1 class="company-name">Alphascid Technology</h1>
+
+            <p class="desc">
+                Elit eu magna officia id in labore consectetur excepteur ut do ut incididunt mollit. Veniam ut veniam deserunt sunt pariatur in ea tempor non mollit. Duis ad commodo aliquip est nulla occaecat tempor ullamco elit.
+            </p>
+
+            <button class="get-started" id="getStarted" type="button" onclick="">
+                Get Started
+            </button>
+        </div>
+
+        <div class="right">
+            <img src="images/overview.svg" alt="">
+        </div>
+        
+        </div>
+
+
+      </main>
+
+
+      <footer>
+        <!--  -->
+      </footer>
+
+
+      <!-- responsive navbar -->
+      <script>
+          function handBurger() {
+              var x = document.getElementById('nav-item-mini');
+              if (x.style.display == "block"){
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+          }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body{
+    background-color:snow;
+}
+
+:root {
+    --blue: #545dff;
+    --light: #f7f7f7;
+    --dark: #3b3b3b;
+  }
+  
+/* start point - Navigation bar */
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color:var(--light);
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.brand{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: var(--blue);
+}
+
+.nav-item{
+    list-style-type: none;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.nav-link a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.contact-button{
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 1rem 0 1rem 0;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.contact-button:hover{
+    color: var(--light);
+    background-color: var(--blue);
+}
+
+.hand-burger{
+    font-size: x-large;
+    display: none;
+}
+
+.nav-item-mini{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hand-burger{
+        display: block;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .contact-button{
+        display: none;       
+    }
+    
+    .mini{
+        display: flex;
+        flex-direction: column;
+        background-color: #1f1f1f;
+        line-height: 2.5rem;
+        overflow-x: hidden;
+    }
+
+    .mini a{
+        color: snow;
+    }
+
+    .mini:hover{
+        background-color: #3650ff;
+    }
+
+    .mini a:hover{
+        color: #fff;
+    }
+}
+
+
+/*  start point - Main Content - Overview*/
+
+.overview{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 3.5rem;
+    overflow-x: hidden;
+}
+
+.left{
+    width: 40%;
+}
+
+.left h1{
+    margin-bottom: .3rem;
+}
+
+.left .get-started{
+    padding: .5rem 1rem;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--light);
+    border-radius: 1rem 0 1rem 0;
+    margin-top: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.left .get-started:hover{
+    color: var(--blue);
+    background-color: transparent;
+}
+
+.right{
+    width: 60%;
+}
+
+.right img{
+    width: 50rem;
+}
+
+@media screen and (max-width: 768px) {
+    .overview{
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: flex-start;
+       padding: 2rem;
+    }
+    
+    .right{
+        width: 100%;
+    }
+
+    .right img{
+        width: 30rem;
+    }
+
+    .left{
+        width: 100%;
+        margin-top: 3.5rem;
+    }
+}
+
+@media  screen and (min-width: 348px) {
+    .overview h1{
+        font-size: 1.5rem;
+    }
+    
+}
