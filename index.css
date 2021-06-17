@@ -192,9 +192,9 @@ header{
     }
 }
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width: 426px) {
     .overview h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
 }
