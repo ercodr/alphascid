@@ -197,9 +197,9 @@ header{
         color: #fff;
     }
 
-
+    /* Who We Are Formatting */
     .about .content p{
-        margin: 5rem 3.5rem;
+        margin: 3.5rem 2rem;
         margin-top: 0;
         font-size: 1.2em;
         text-align: justify;
