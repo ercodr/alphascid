@@ -31,7 +31,7 @@ header{
 .brand{
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: var(--blue);
+    color: var(--dark);
 }
 
 .nav-item{
@@ -94,6 +94,12 @@ header{
 
 .left h1{
     margin-bottom: .3rem;
+    color: var(--blue);
+}
+
+.left .desc{
+    color: var(--dark);
+    opacity: 90%;
 }
 
 .left .get-started{
@@ -186,7 +192,7 @@ header{
     }
 }
 
-@media  screen and (min-width: 348px) {
+@media  screen and (max-width: 348px) {
     .overview h1{
         font-size: 1.5rem;
     }
