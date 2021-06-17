@@ -70,6 +70,10 @@ header{
     display: none;
 }
 
+.fa-bars{
+    color: var(--blue);
+}
+
 @media screen and (max-width: 768px) {
 
     .hand-burger{
