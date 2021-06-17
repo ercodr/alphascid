@@ -101,6 +101,7 @@ header{
 .left .desc{
     color: var(--dark);
     opacity: 90%;
+    /* text-align: justify; */
 }
 
 .left .get-started{
@@ -129,6 +130,36 @@ header{
 .right img{
     width: 50rem;
 }
+
+
+
+/* start point - about - page */
+
+.about .content{
+    overflow-x: hidden;
+    background-color: var(--blue);
+    align-items: center;
+    text-align: center;
+    color: var(--light);
+    margin-top: 7rem;
+}
+
+.content h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.about .content p{
+    margin: 5rem 10rem;
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+
+
 
 
 /* start point - Media Query */
@@ -164,6 +195,15 @@ header{
 
     .mini a:hover{
         color: #fff;
+    }
+
+
+    .about .content p{
+        margin: 5rem 3.5rem;
+        margin-top: 0;
+        font-size: 1.2em;
+        text-align: justify;
+    
     }
 }
 @media screen and (min-width: 768px) {
