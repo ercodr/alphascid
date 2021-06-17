@@ -31,63 +31,81 @@
       <a href="javascript:void(0);" class="hand-burger" onclick="handBurger()">
         <i class="fa fa-bars"></i>
       </a>
-      
     </header>
-    
-      <nav>
-        <ul class="nav-item-mini" id="nav-item-mini">
-          <li class="nav-link mini"><a href="">about</a></li>
-          <li class="nav-link mini"><a href="">services</a></li>
-          <li class="nav-link mini"><a href="">technologies</a></li>
-          <li class="nav-link mini"><a href="">the team</a></li>
-          <li class="nav-link mini"><a href="">contact us</a></li>
-        </ul>
-      </nav>
 
-      <main id="main" onclick="collapse()">
-        <div class="overview">
-            <div class="left">
-                <h1 class="company-name">Alphascid Technology</h1>
+    <nav>
+      <ul class="nav-item-mini" id="nav-item-mini">
+        <li class="nav-link mini"><a href="">about</a></li>
+        <li class="nav-link mini"><a href="">services</a></li>
+        <li class="nav-link mini"><a href="">technologies</a></li>
+        <li class="nav-link mini"><a href="">the team</a></li>
+        <li class="nav-link mini"><a href="">contact us</a></li>
+      </ul>
+    </nav>
 
-            <p class="desc">
-                Elit eu magna officia id in labore consectetur excepteur ut do ut incididunt mollit. Veniam ut veniam deserunt sunt pariatur in ea tempor non mollit. Duis ad commodo aliquip est nulla occaecat tempor ullamco elit.
-            </p>
+    <main id="main" onclick="collapse()">
+      <!-- Company Overview -->
+      <div class="overview">
+        <div class="left">
+          <h1 class="company-name">Alphascid Technology</h1>
 
-            <button class="get-started" id="getStarted" type="button" onclick="">
-                Get Started
-            </button>
+          <p class="desc">
+            Elit eu magna officia id in labore consectetur excepteur ut do ut
+            incididunt mollit. Veniam ut veniam deserunt sunt pariatur in ea
+            tempor non mollit. Duis ad commodo aliquip est nulla occaecat tempor
+            ullamco elit.
+          </p>
+
+          <button class="get-started" id="getStarted" type="button" onclick="">
+            Get Started
+          </button>
         </div>
 
         <div class="right">
-            <img src="images/overview.svg" alt="">
+          <img src="images/overview.svg" alt="" />
         </div>
-        
-        </div>
+      </div>
 
-
-      </main>
-
-
-      <footer>
+      <!-- What We Do -->
         <!--  -->
-      </footer>
+      <!-- What We Do -->
 
 
-      <!-- responsive navbar -->
-      <script>
-          function handBurger() {
-              var x = document.getElementById('nav-item-mini');
-              if (x.style.display == "block"){
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-          }
+      <!-- What We Use -->
+        <!--  -->
+      <!-- What We Use -->
 
-          function collapse() {
-            var col = document.getElementById('nav-item-mini');
-              col.style.display = "none";
-          }
-      </script>
+
+      <!-- The Team -->
+        <!--  -->
+      <!-- The Team -->
+
+
+      <!-- Get In Touch -->
+        <!--  -->
+      <!-- Get In Touch -->
+
+    </main>
+
+    <footer>
+      <!--  -->
+    </footer>
+
+    <!-- responsive navbar -->
+    <script>
+      function handBurger() {
+        var x = document.getElementById("nav-item-mini");
+        if (x.style.display == "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function collapse() {
+        var col = document.getElementById("nav-item-mini");
+        col.style.display = "none";
+      }
+    </script>
   </body>
 </html>
