@@ -1,6 +1,6 @@
 :root {
     --blue: #545dff;
-    --light: #f7f7f7;
+    --light: #ffffff;
     --dark: #3b3b3b;
   }
   
@@ -53,7 +53,7 @@ header{
     background-color: transparent;
     border: 1px solid var(--blue);
     color: var(--blue);
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 1rem 1rem 0;
     transition: .1s;
     cursor: pointer;
 }
@@ -76,6 +76,52 @@ header{
     color: var(--dark);
 }
 
+
+
+/*  start point - Main Content - Overview*/
+
+.overview{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 3.5rem;
+    overflow-x: hidden;
+}
+
+.left{
+    width: 40%;
+}
+
+.left h1{
+    margin-bottom: .3rem;
+}
+
+.left .get-started{
+    padding: .5rem 1rem;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--light);
+    border-radius: 1rem 1rem 0;
+    margin-top: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.left .get-started:hover{
+    color: var(--blue);
+    background-color: transparent;
+}
+
+.right{
+    width: 60%;
+}
+
+.right img{
+    width: 50rem;
+}
+
+
+/* start point - Media Query */
 @media screen and (max-width: 768px) {
 
     .hand-burger{
@@ -110,49 +156,13 @@ header{
         color: #fff;
     }
 }
-
-
-/*  start point - Main Content - Overview*/
-
-.overview{
-    display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    padding: 3.5rem;
-    overflow-x: hidden;
+@media screen and (min-width: 768px) {
+    .nav-item-mini{
+        display: none;
+    }
 }
 
-.left{
-    width: 40%;
-}
 
-.left h1{
-    margin-bottom: .3rem;
-}
-
-.left .get-started{
-    padding: .5rem 1rem;
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
-    color: var(--light);
-    border-radius: 1rem 0 1rem 0;
-    margin-top: 1.2rem;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.left .get-started:hover{
-    color: var(--blue);
-    background-color: transparent;
-}
-
-.right{
-    width: 60%;
-}
-
-.right img{
-    width: 50rem;
-}
 
 @media screen and (max-width: 768px) {
     .overview{

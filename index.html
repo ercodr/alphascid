@@ -35,7 +35,7 @@
     </header>
     
       <nav>
-        <ul class="nav-item-mini " id="nav-item-mini">
+        <ul class="nav-item-mini" id="nav-item-mini">
           <li class="nav-link mini"><a href="">about</a></li>
           <li class="nav-link mini"><a href="">services</a></li>
           <li class="nav-link mini"><a href="">technologies</a></li>
@@ -44,7 +44,7 @@
         </ul>
       </nav>
 
-      <main>
+      <main id="main" onclick="collapse()">
         <div class="overview">
             <div class="left">
                 <h1 class="company-name">Alphascid Technology</h1>
@@ -82,6 +82,11 @@
               } else {
                 x.style.display = "block";
               }
+          }
+
+          function collapse() {
+            var col = document.getElementById('nav-item-mini');
+              col.style.display = "none";
           }
       </script>
   </body>
