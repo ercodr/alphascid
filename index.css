@@ -4,6 +4,9 @@
     --dark: #3b3b3b;
   }
   
+html{
+    scroll-behavior:smooth;
+}
 
 * {
     box-sizing: content-box;
